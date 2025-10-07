@@ -1,17 +1,8 @@
 /**
- * Watches the search queries
+ * Watches the search queries - Redundant, a solução com Strategy usa observadores especializados.
  */
 public class Snooper {
-    private final WebSearchModel model;
-
     public Snooper(WebSearchModel model) {
-        this.model = model;
-
-        model.addQueryObserver( new WebSearchModel.QueryObserver() {
-            @Override
-            public void onQuery(String query) {
-                System.out.println("Query: " + query);
-            }
-        });
+        // Não faz mais nada, a lógica de registro foi movida para Main.java.
     }
 }
